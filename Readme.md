@@ -16,7 +16,7 @@
 
 ## Setup/Installation Requirements
 1.  Open PowerShell
-2.  $ git clone https://github.com/TalayRuk/Github-User-Lookup.git
+2.  $ git clone https://github.com/TalayRuk/Github-UserLookup.git
 3.  $ cd Github-User-Lookup
 4.  $ npm install
 5.  $ bower install
