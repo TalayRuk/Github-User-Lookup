@@ -1,4 +1,4 @@
-# Github User LookUp
+# GitHub User Lookup
 
 #### Week1: Modern JS Apps - Independent project using API
 
@@ -11,18 +11,19 @@
 ## Behavior Driven Development
 |Behavior | input | output|
 |--- | :---: | :---: |
-|Allow user to input name in uppercase letters, the output will be lowercase | ADAM | adam
-|Allow user to input name in lowercase letters, the output will be lowercase| adam | adam
+|User can search the person's public GitHub repositories by input the GitHub username in the form input box. 
+|Allow user to input GitHub username in uppercase letters and able to find that GitHub user | TALAYRUK | TalayRuk
+|Allow user to input GitHub username in lowercase letters, and able to find that GitHub user| talayruk | TalayRuk
 
 ## Setup/Installation Requirements
 1.  Open PowerShell
-2.  $ git clone https://github.com/TalayRuk/Github-UserLookup.git
-3.  $ cd Github-User-Lookup
+2.  $ git clone https://GitHub.com/TalayRuk/GitHub-UserLookup.git
+3.  $ cd GitHub-User-Lookup
 4.  $ npm install
 5.  $ bower install
 6.  $ npm install browser-sync --save-dev
 7.  $ npm install gulp-sass gulp-sourcemaps --save-dev
-8.  Create your API (Personal Access Token) in Github:
+8.  Create your API (Personal Access Token) in GitHub:
     - Visit the Settings area of your GitHub account, select Personal Access Tokens from the sidebar, and hit Generate New Token.
     - GitHub will offer a list of options. Do not select any. These grant read/write permissions and access to personal data. Finally, select Generate Token.
 9.  $ make new .env file in your directory and type in exports.apiKey = "place your-API-here"; and save.
