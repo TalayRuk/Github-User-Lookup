@@ -1,18 +1,20 @@
 var Repos = require('./../js/userLookup.js').reposModule;
 
+var displayLogin = function(name, loginData) {
+  $('.showUser').append("<h2> The username is " + name + loginData + ". </h2>");
+  console.log(loginData);
+};
+
+
 $(document).ready(function() {
   var searchRepos = new Repos();
   searchRepos.getRepos();
-
   $('#searchName').click(function() {
     //get input value
     var name = $('#userName').val();
     $('#userName').val("");
     console.log(name);
-    var displayUserName = function(name, userData) {
-      $('.showUser').append("<h2> The username is " + name + userData + ". </h2>");
-    }
-    console.log(userData);//undefine
+    searchRepos.getRepos(name, displayLogin);
 
     // $('#showRepos').show('<a heref="https://github.com/"' +  name + '"?page=2&tab=repositories"></a>' );
 
