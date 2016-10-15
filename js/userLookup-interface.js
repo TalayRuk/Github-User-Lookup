@@ -7,18 +7,24 @@ $(document).ready(function() {
     $('#userName').val("");
     $.get('https://api.github.com/users/talayruk?access_token=' + apiKey, function(response) {
       console.log(response);
-      $('.showUser').append("The name you have chosen is " + name +  "." + <li> + "The picture profile is " + response.login + ", " + response.avatar_url + " , " + response. html_url " .");
+      $('.showUser').append("The name you have chosen is " + name +  "." + "The picture profile is " + response.login + ", " + response.avatar_url + " , " + response. html_url  + ".");
+      $('.showRepos').text('<a heref="https://github.com/"' +  name + '"?page=2&tab=repositories"></a>' )
       $('#userPic').show();
+
+
+
     });
+    $('.showUser').empty();
   });
 });
 
 
 
-
-
-
-
+// var login = $('#userName').val("");
+// var html_url = href =
+//
+//
+// <img id="userPic" src="https://avatars.githubusercontent.com/u/19232053?v=3" alt="avatar_url" />
 
 
 
