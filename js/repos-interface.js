@@ -1,4 +1,4 @@
-var Repos = require('./../js/userLookup.js').reposModule;
+var Repos = require('./../js/repos.js').reposModule;
 
 var displayLogin = function(name, loginData) {
   $('.showUser').append("<h2> The username is " + name + loginData + ". </h2>");
