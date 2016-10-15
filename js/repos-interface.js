@@ -1,8 +1,8 @@
 var Repos = require('./../js/repos.js').reposModule;
 
-var displayLogin = function(name, loginData) {
-  $('.showUser').append("<h2> The username is " + name + loginData + ". </h2>");
-  console.log(loginData);
+var displayData = function(name, userData) {
+  $('.showUser').append("<h2> Here is the username " + userData + ". </h2>");
+  console.log(userData);
 };
 
 
@@ -14,7 +14,7 @@ $(document).ready(function() {
     var name = $('#userName').val();
     $('#userName').val("");
     console.log(name);
-    searchRepos.getRepos(name, displayLogin);
+    searchRepos.getRepos(name, displayData);
 
     // $('#showRepos').show('<a heref="https://github.com/"' +  name + '"?page=2&tab=repositories"></a>' );
 
