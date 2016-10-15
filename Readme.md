@@ -37,17 +37,11 @@
 _none_
 
 ## Support and contact details
-_Contact me at vjde28@gmail.com_
+_Please contact the authors if you have any questions or comments._
 
 ## Technologies Used
 
-1. HTML
-2. CSS
-3. JavaScript
-4. Node.js
-5. Npm & Gulp
-6. Bower & Sass
-7. API
+HTML, CSS, JavaScript, Node.js, Npm & Gulp, Bower & Sass, API
 
 
 ## License
