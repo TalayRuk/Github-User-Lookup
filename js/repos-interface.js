@@ -1,23 +1,31 @@
-var apiKey = "1482ae2b901b63efd5fde17a4f40226057c08c3e";
+var Repos = require('./../js/userLookup.js').reposModule;
 
 $(document).ready(function() {
+  var searchRepos = new Repos();
+  searchRepos.getRepos();
+
   $('#searchName').click(function() {
     //get input value
     var name = $('#userName').val();
     $('#userName').val("");
-    $.get('https://api.github.com/users/talayruk?access_token=' + apiKey, function(response) {
-      console.log(response);
-      $('.showUser').append("The name you have chosen is " + name +  "." + "The picture profile is " + response.login + ", " + response.avatar_url + " , " + response. html_url  + ".");
-      $('.showRepos').text('<a heref="https://github.com/"' +  name + '"?page=2&tab=repositories"></a>' )
-      $('#userPic').show();
+    console.log(name);
+    var displayUserName = function(name, userData) {
+      $('.showUser').append("<h2> The username is " + name + userData + ". </h2>");
+    }
+    console.log(userData);//undefine
+
+    // $('#showRepos').show('<a heref="https://github.com/"' +  name + '"?page=2&tab=repositories"></a>' );
 
 
 
-    });
-    $('.showUser').empty();
+// var img = document.querySelector('#userPic');
+    // $('.showUser').empty();
   });
 });
 
+//Get user repo
+
+// $('img#userPic').text "<img " response.avatar_url + " , " + response. html_url  + ".");
 
 
 // var login = $('#userName').val("");
