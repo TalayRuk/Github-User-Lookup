@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 
 // var img = document.querySelector('#userPic');
-    // $('.showUser').empty();
+    $('.showUser').empty();
   });
 });
 
