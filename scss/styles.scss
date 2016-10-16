@@ -7,14 +7,18 @@ $red: #800000;
 $lightRed: #c06661;
 $white: #fff;
 $salmon: #c99092;
+//http://www.freestockimages.org/wp-content/uploads/2009/04/free-stock-images-rust-metal-blue-background.jpg
 
-
-
+body {
+  background-image: url("http://www.dvd-ppt-slideshow.com/images/ppt-background/background-15.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .container {
   text-align: center;
 }
 .jumbotron {
-  margin-top: 10%;
+  margin-top: 15%;
   background-color: $teal;
   border-radius: 50%;
   color: $salmon;
@@ -56,7 +60,7 @@ button:active {
 }
 
 #showRepos a {
-  color: $white;
+  color: $lightTeal;
 }
 img {
   width: 10%;
